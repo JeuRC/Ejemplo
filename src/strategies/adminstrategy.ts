@@ -10,7 +10,7 @@ export class EstrategiaAdministrador implements AuthenticationStrategy{
 
   constructor(
     @service(AutenticacionService)
-    public servicioAuthenticacion:AuthenticactionService
+    public servicioAuthenticacion:AutenticacionService
   ){}
   async authenticate(request : Request) : Promise<UserProfile | undefined>{
     let token = parseBearerToken(request);

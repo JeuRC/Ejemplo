@@ -10,6 +10,8 @@ import {ServiceMixin} from '@loopback/service-proxy';
 import path from 'path';
 import {MySequence} from './sequence';
 import {EstrategiaAdministrador} from './strategies/adminstrategy';
+import {registerAuthenticationStrategy} from '@loopback/authentication';
+import {AuthenticationComponent} from '@loopback/authentication';
 
 export {ApplicationConfig};
 
